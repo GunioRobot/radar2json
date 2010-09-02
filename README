@@ -1,0 +1,11 @@
+http://radarmatic.com/
+
+only works with base reflectivity products (so far)
+
+compile & install with:
+    gcc radar2json.c
+    sudo mv a.out /usr/bin/radar2json
+
+test it with:
+    curl -O http://weather.noaa.gov/pub/SL.us008001/DF.of/DC.radar/DS.p20-r/SI.kokx/sn.last
+    radar2json sn.last
